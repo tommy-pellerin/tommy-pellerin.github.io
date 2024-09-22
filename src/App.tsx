@@ -1,33 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import NavBar from "./components/navbar/navBar";
+import { Suspense } from 'react';
+import Jumbotron from './components/jumbotron/jumbotron';
+import Introduction from './components/introduction/introduction';
+import Skills from './components/skills/skills';
+import Projects from './components/projects/projects';
+import Experiences from './components/experiences/experience';
+import Contact from './components/contact/contact';
+import Trainings from './components/trainings/trainings';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <NavBar/>
+        {/* <Suspense>
+          <Jumbotron />
+        </Suspense> */}
+      </header>
+      <main className="container mx-auto">
+        {/* <Suspense>
+          <section id="introduction" className='navbar-padding'>
+            <Introduction />
+          </section>
+        </Suspense>
+        <Suspense>
+          <section id="skills" className='navbar-padding'>
+            <Skills />
+          </section>
+        </Suspense>
+        <Suspense>
+          <section id="projects" className='navbar-padding'>
+            <Projects />
+          </section>
+        </Suspense>
+        <Suspense>
+          <section id="experiences" className='navbar-padding'>
+            <Experiences />
+          </section>
+        </Suspense>
+        <Suspense>
+          <section id="trainings" className='navbar-padding'>
+            <Trainings />
+          </section>
+        </Suspense>
+        <Suspense>
+          <section id="contact" className='navbar-padding'>
+            <Contact />
+          </section>
+        </Suspense> */}
+      </main>
+      <footer className="text-center bg-foreground text-background py-2">
+        <p>Make with 💖 and 💪 by TOMMY PELLERIN</p>
+        <p>@2024 all right reserved</p>
+      </footer>
     </>
   )
 }
