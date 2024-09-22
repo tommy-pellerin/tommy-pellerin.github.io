@@ -31,15 +31,15 @@ function ProjectCard({ project }: ProjectCardProps) {
   return (
     <>
       <div className='rounded-xl shadow-xl p-2 text-center bg-primaryMedium'>
-        <div className='flex flex-col md:flex-row justify-center gap-2 w-full h-56'>
+        <div className='flex flex-col md:flex-row justify-center gap-2 w-full h-full'>
           {project.images &&
             project.images.map((image,index)=>{
               return(
-                <div key={index} className='relative w-full h-full bg-primaryLight' onClick={()=> openModal(image)}>
+                <div key={index} className='w-auto h-56 bg-primaryLight' onClick={()=> openModal(image)}>
                   <img
-                  src={image}
-                  className='object-contain hover:cursor-pointer'
-                  alt={project.title}
+                    src={image}
+                    className='object-contain w-full h-full hover:cursor-pointer'
+                    alt={project.title}
                   />
                 </div>
               )

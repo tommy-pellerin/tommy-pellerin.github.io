@@ -11,7 +11,7 @@ function LogoCircle({ logo }: LogoCircleProps) {
           <div className='relative w-14 h-14'>
             <img
               src={logo}
-              className='object-contain'
+              className='object-contain w-full h-full'
               alt="company logo"
             />
           </div>

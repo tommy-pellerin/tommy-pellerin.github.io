@@ -7,10 +7,10 @@ function Introduction() {
       <h1 className='text-background'>Introduction</h1>
       <div className='bg-background'>
         <div className='p-3'>
-          <div className='relative w-32 h-32 float-start mr-5 rounded-full overflow-hidden'>
+          <div className='w-32 h-32 float-start mr-5 rounded-full overflow-hidden'>
             <img 
               src="/tommy.jpg"
-              className='object-cover'
+              className='object-cover w-full h-full'
               alt="my profile image"
             />
           </div>

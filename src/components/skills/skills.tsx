@@ -12,10 +12,10 @@ function Skills() {
             return (
               <div key={index} className='justify-self-center bg-foreground rounded-full m-3 p-2 w-20 h-20 overflow-hidden'>
                 <div className='flex justify-center items-center rounded-full w-full h-full bg-primaryMedium'>
-                  <div className='relative w-14 h-14'>
+                  <div className='w-14 h-14'>
                     <img 
                       src={skill.image}
-                      className='object-contain'
+                      className='object-contain w-full h-full'
                       alt={skill.technology}
                     />
                   </div>
