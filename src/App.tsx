@@ -14,37 +14,37 @@ function App() {
     <>
       <header>
         <NavBar/>
-        <Suspense>
-          <Jumbotron />
-        </Suspense>
       </header>
       <main className="container mx-auto">
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Jumbotron />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <section id="introduction" className='navbar-padding'>
             <Introduction />
           </section>
         </Suspense>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <section id="skills" className='navbar-padding'>
             <Skills />
           </section>
         </Suspense>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <section id="projects" className='navbar-padding'>
             <Projects />
           </section>
         </Suspense>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <section id="experiences" className='navbar-padding'>
             <Experiences />
           </section>
         </Suspense>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <section id="trainings" className='navbar-padding'>
             <Trainings />
           </section>
         </Suspense>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <section id="contact" className='navbar-padding'>
             <Contact />
           </section>

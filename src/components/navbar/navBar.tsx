@@ -6,7 +6,7 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <nav className='sticky bg-foreground top-0 z-50'>
+    <nav className='sticky top-0 z-50 bg-foreground'>
       <div className="flex flex-row justify-between mx-5">
         <a className="relative w-12 h-12" href="/">
           <img 

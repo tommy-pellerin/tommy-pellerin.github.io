@@ -35,10 +35,10 @@ function ProjectCard({ project }: ProjectCardProps) {
           {project.images &&
             project.images.map((image,index)=>{
               return(
-                <div key={index} className='w-auto h-56 bg-primaryLight' onClick={()=> openModal(image)}>
+                <div key={index} className='w-auto h-56 bg-primaryLight rounded-lg' onClick={()=> openModal(image)}>
                   <img
                     src={image}
-                    className='object-contain w-full h-full hover:cursor-pointer'
+                    className='object-contain w-full h-full hover:cursor-pointer rounded-lg'
                     alt={project.title}
                   />
                 </div>
