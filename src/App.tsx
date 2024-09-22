@@ -12,9 +12,7 @@ function App() {
   
   return (
     <>
-      <header>
-        <NavBar/>
-      </header>
+      <NavBar/>
       <main className="container mx-auto">
         <Suspense fallback={<div>Loading...</div>}>
           <Jumbotron />

@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <nav className='sticky top-0 z-50 bg-foreground'>
       <div className="flex flex-row justify-between mx-5">
-        <a className="relative w-12 h-12" href="/">
+        <a className="w-12 h-12 mb-1" href="/">
           <img 
             src="/logo-colored.png"
             className='object-contain'
