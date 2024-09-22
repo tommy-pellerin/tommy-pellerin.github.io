@@ -10,7 +10,7 @@ export default function NavBar() {
       <div className="flex flex-row justify-between mx-5">
         <a className="relative w-12 h-12" href="/">
           <img 
-            src="/logo.png"
+            src="/logo-colored.png"
             className='object-contain'
             alt="portfolio logo"
           />
