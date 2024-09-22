@@ -193,7 +193,7 @@ export const experiencesData = [
 export const trainingsData = [
   {
     title:"Web development",
-    content:"Learning",
+    content:"Learning full stack web development",
     school:"The hacking project",
     schoolLogo:"/schools/the_hacking_project_logo.jpg",
     localisation:"Remote",
@@ -202,7 +202,7 @@ export const trainingsData = [
   },
   {
     title:"Mechanical Engineer",
-    content:"Learning",
+    content:"Learning from conception to production",
     school:"Institut National des Sciences Appliquées",
     schoolLogo:"/schools/institut_national_des_sciences_appliques_de_toulouse_logo.jpg",
     localisation:"Toulouse",
@@ -211,7 +211,7 @@ export const trainingsData = [
   },
   {
     title:"Mechanical Engineer",
-    content:"Learning",
+    content:"Specialise in production management and innovation",
     school:"Loughborough University",
     schoolLogo:"/schools/loughborough.jpg",
     localisation:"Loughborough",

@@ -47,19 +47,21 @@ function ProjectCard({ project }: ProjectCardProps) {
           }
         </div>
         <h2>{project.title}</h2>
-        <div>
+        <div className=''>
           <p>{project.resume}</p>
           <p className='text-sm'>{project.start_date} - {project.end_date}</p>
-          <a href={project.github}>Github</a>
-          {
-            project.production &&
-            <a href={project.production}>Production</a>
-          }
+          <div className='my-3'>
+            <a href={project.github} className='button_with_border'>Github</a>
+            {
+              project.production &&
+              <a href={project.production} className='button_with_border'>Production</a>
+            }
+          </div>
           {/* <div className='flex justify-center'>
-            <button className='button_with_border flex flex-row items-center my-1'>
-              Details
-            </button>
-          </div> */}
+              <button className='button_with_border flex flex-row items-center my-1'>
+                Details
+              </button>
+            </div> */}
         </div>
       </div>
       {isModalOpen && selectedImage && (
