@@ -14,12 +14,12 @@ function App() {
     <>
       <header>
         <NavBar/>
-        {/* <Suspense>
+        <Suspense>
           <Jumbotron />
-        </Suspense> */}
+        </Suspense>
       </header>
       <main className="container mx-auto">
-        {/* <Suspense>
+        <Suspense>
           <section id="introduction" className='navbar-padding'>
             <Introduction />
           </section>
@@ -48,7 +48,7 @@ function App() {
           <section id="contact" className='navbar-padding'>
             <Contact />
           </section>
-        </Suspense> */}
+        </Suspense>
       </main>
       <footer className="text-center bg-foreground text-background py-2">
         <p>Make with 💖 and 💪 by TOMMY PELLERIN</p>

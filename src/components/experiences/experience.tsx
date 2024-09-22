@@ -1,7 +1,6 @@
-import React from 'react'
 import ExpeCard from './expeCard'
 import LogoCircle from '../logoCircle'
-import { experiencesData } from '@/app/lib/placeholder-data'
+import { experiencesData } from '../../lib/placeholder-data'
 
 function Experiences() {
   return (

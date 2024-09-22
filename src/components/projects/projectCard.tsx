@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Image from 'next/image';
+import { useState } from 'react'
 import ImageModal from './imageModal';
 interface Project {
   title: string;
@@ -37,11 +36,10 @@ function ProjectCard({ project }: ProjectCardProps) {
             project.images.map((image,index)=>{
               return(
                 <div key={index} className='relative w-full h-full bg-primaryLight' onClick={()=> openModal(image)}>
-                  <Image
-                    src={image}
-                    fill
-                    className='object-contain hover:cursor-pointer'
-                    alt={project.title}
+                  <img
+                  src={image}
+                  className='object-contain hover:cursor-pointer'
+                  alt={project.title}
                   />
                 </div>
               )

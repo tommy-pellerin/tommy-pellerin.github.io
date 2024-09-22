@@ -1,6 +1,5 @@
-import React from 'react'
 import { DocumentTextIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
+
 
 function Introduction() {
   return (
@@ -9,9 +8,8 @@ function Introduction() {
       <div className='bg-background'>
         <div className='p-3'>
           <div className='relative w-32 h-32 float-start mr-5 rounded-full overflow-hidden'>
-            <Image 
-              src="/tommy.jpg" 
-              fill
+            <img 
+              src="/tommy.jpg"
               className='object-cover'
               alt="my profile image"
             />

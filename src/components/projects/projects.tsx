@@ -1,7 +1,5 @@
-'use client'
-import React from 'react'
 import ProjectCard from './projectCard'
-import { projectsData } from '@/app/lib/placeholder-data'
+import { projectsData } from '../../lib/placeholder-data'
 import { useState } from 'react';
 
 function Projects() {

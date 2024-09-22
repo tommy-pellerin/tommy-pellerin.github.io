@@ -1,6 +1,4 @@
-import React from 'react'
 import { skillsData } from "../../lib/placeholder-data"
-import Image from 'next/image'
 
 function Skills() {
   const sortedSkillsData = skillsData.sort((a, b) => a.application.localeCompare(b.application));
@@ -15,9 +13,8 @@ function Skills() {
               <div key={index} className='justify-self-center bg-foreground rounded-full m-3 p-2 w-20 h-20 overflow-hidden'>
                 <div className='flex justify-center items-center rounded-full w-full h-full bg-primaryMedium'>
                   <div className='relative w-14 h-14'>
-                    <Image 
-                      src={skill.image} 
-                      fill
+                    <img 
+                      src={skill.image}
                       className='object-contain'
                       alt={skill.technology}
                     />

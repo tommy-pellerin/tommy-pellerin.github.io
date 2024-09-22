@@ -1,5 +1,3 @@
-import React from 'react'
-import Image from 'next/image'
 import { XMarkIcon } from '@heroicons/react/24/outline';
 interface ImageModalProps {
   image: string;
@@ -16,10 +14,8 @@ function ImageModal({ image, alt, onClose }: ImageModalProps) {
           <XMarkIcon/>
         </button>
         <div>
-          <Image
+          <img
             src={image}
-            width={800}
-            height={600}
             className='object-contain'
             alt={alt}
           />

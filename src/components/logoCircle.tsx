@@ -1,5 +1,3 @@
-import React from 'react'
-import Image from 'next/image'
 interface LogoCircleProps {
   logo: string
 }
@@ -11,10 +9,8 @@ function LogoCircle({ logo }: LogoCircleProps) {
         {
           logo ?
           <div className='relative w-14 h-14'>
-            <Image 
-              src={logo} 
-              fill
-              sizes="56px" // Set sizes to match the container width which is w-14
+            <img
+              src={logo}
               className='object-contain'
               alt="company logo"
             />

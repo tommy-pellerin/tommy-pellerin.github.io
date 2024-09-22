@@ -1,7 +1,6 @@
-import React from 'react'
 import ExpeCard from '../experiences/expeCard'
 import LogoCircle from '../logoCircle'
-import { trainingsData } from '@/app/lib/placeholder-data'
+import { trainingsData } from '../../lib/placeholder-data'
 
 function Trainings() {
   return (
