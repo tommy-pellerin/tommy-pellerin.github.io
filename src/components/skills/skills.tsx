@@ -12,13 +12,13 @@ function Skills() {
             return (
               <div key={index} className='justify-self-center bg-foreground rounded-full m-3 p-2 w-20 h-20 overflow-hidden'>
                 <div className='flex justify-center items-center rounded-full w-full h-full bg-primaryMedium'>
-                  <div className='w-14 h-14'>
+                  <div className='relative w-14 h-14 group'>
                     <img 
                       src={skill.image}
-                      className='object-contain w-full h-full'
+                      className='object-contain w-full h-full group-hover:opacity-30'
                       alt={skill.technology}
                     />
-                  </div>
+                    <p className="absolute inset-0 flex justify-center items-center text-center text-primary text-sm opacity-0 pointer-events-none group-hover:opacity-100 hover:pointer-events-auto transition-opacity duration-300">{skill.technology}</p>                  </div>
                 </div>
               </div>              
             )

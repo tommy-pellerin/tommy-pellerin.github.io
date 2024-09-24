@@ -15,7 +15,7 @@
   --fail: #8d1b1f;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #444444;
     --foreground: #ededed;
