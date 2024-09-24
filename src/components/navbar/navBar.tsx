@@ -1,6 +1,7 @@
 import NavLinks from './nav-links';
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
+import DarkLight from './darkLight';
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,6 +16,8 @@ export default function NavBar() {
             alt="portfolio logo"
           />
         </a>
+
+        <DarkLight/>
 
         {/* show only in small screen */}
         <button className="md:hidden" onClick={()=>setIsMenuOpen(!isMenuOpen)}>

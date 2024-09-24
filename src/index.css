@@ -15,17 +15,22 @@
   --fail: #8d1b1f;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #444444;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark-mode {
+  --background: #444444;
+  --foreground: #ededed;
 }
 
 @layer utilities {
