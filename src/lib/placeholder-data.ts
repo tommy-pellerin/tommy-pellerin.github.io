@@ -105,7 +105,7 @@ export const projectsData = [
     end_date:"28/06/2024",
     images: ["/projects/keella1.png", "/projects/keella2.png", "/projects/keella3.png"],
     github: "https://github.com/tommy-pellerin/keella",
-    production: "https://keella.fly.dev/"
+    production: "https://front-keella.vercel.app/"
   },
   {
     title: "The Hacking Project student dashboard",
