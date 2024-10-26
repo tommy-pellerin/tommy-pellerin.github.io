@@ -26,10 +26,10 @@ function Introduction() {
           <h3>Download my resume</h3>
           <div className='md:hidden'>👇👇</div>
           <div className='hidden md:block'>👉👉</div>
-          <a href="/developper_resume/CV_Tommy_Pellerin.pdf" download className='button_with_border flex flex-row items-center my-1'>
+          {/* <a href="/developper_resume/CV_Tommy_Pellerin.pdf" download className='button_with_border flex flex-row items-center my-1'>
             Developer resume
             <DocumentTextIcon aria-hidden="true" className="h-6 w-6"/>
-          </a>
+          </a> */}
           <a href="/mechanical_resume/CV_Tommy_Pellerin.pdf" download className='button_with_border flex flex-row items-center my-1'>
             Mechanical engineer resume
             <DocumentTextIcon aria-hidden="true" className="h-6 w-6"/>
